@@ -1,6 +1,6 @@
 # Terminal
 
-在 GUI 世界中保持 Terminal 风，敲打键盘伴随着愉悦心情
+在 GUI 世界保持 Terminal 风，键盘清脆的愉悦心情
 
 ## Vim
 
@@ -11,3 +11,57 @@ Vim 不得不经常用，虽然 vim 和 emacs 的大战已经旷世久远，并�
 ## Tmux
 
 有 screen 就已经够好了，但 tmux 依然给的工作带来了乐趣和惊喜
+
+`~/.tmux.conf`:
+
+    set -g prefix C-a
+
+Attach 神同步了
+
+    tmux a
+
+当更小屏幕的设备进来了，有一种保护原则，屏幕区域会变小，也可以强制弹舱
+
+    C-a S-s
+
+新窗口
+
+    C-a c
+
+切窗
+
+    C-a n
+    C-a p
+
+分屏
+
+    C-a "          split vertically
+    C-a %          split horizontally
+
+切屏
+
+    C-a left
+    C-a right
+    C-a up
+    C-a down
+
+调整大小
+
+    C-a M-up
+    C-a M-down
+    C-a M-left
+    C-a M-right
+
+关屏
+
+    C-a x
+
+Detach
+
+    C-a d
+
+Session 的在实际情况下使用的不多
+
+## Mosh
+
+神器
